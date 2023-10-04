@@ -4,6 +4,7 @@ import Button from "../../../Button"
 
 const Container = styled.div`
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -13,6 +14,7 @@ const Container = styled.div`
     width: 100vw;
 `
 const BackgroundImage = styled.img`
+    display: flex;
     height: 100%;
     object-fit: cover;
     filter: brightness(30%);

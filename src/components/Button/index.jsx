@@ -9,6 +9,7 @@ const ButtonStyled = styled.button`
     cursor: pointer;
     display: flex;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     gap: .5em;
     padding: .5em .75em;
     transition: .7s ease;
