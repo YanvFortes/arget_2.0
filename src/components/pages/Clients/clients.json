@@ -1,0 +1,117 @@
+[
+    {   
+        "id": "1",
+        "name": "UFRGS",
+        "src": "assets/Clientes/UFRGS.png"
+    },
+    {   
+        "id": "2",
+        "name": "AJuris",
+        "src": "assets/Clientes/AJuris.png"
+    },
+    {   
+        "id": "3",
+        "name": "Alcapone",
+        "src": "assets/Clientes/Alcapone.png"
+    },
+    {   
+        "id": "4",
+        "name": "Atlas Schindler",
+        "src": "assets/Clientes/Atlas.png"
+    },
+    {   
+        "id": "5",
+        "name": "Beleza.com",
+        "src": "assets/Clientes/BelezaCom.png"
+    },
+    {   
+        "id": "6",
+        "name": "Computech",
+        "src": "assets/Clientes/Computech.png"
+    },
+    {   
+        "id": "7",
+        "name": "Cross Life",
+        "src": "assets/Clientes/CrossLife.png"
+    },
+    {   
+        "id": "8",
+        "name": "DBH Marina",
+        "src": "assets/Clientes/DBHMarina.png"
+    },
+    {   
+        "id": "9",
+        "name": "Eco Ville",
+        "src": "assets/Clientes/EcoVille.png"
+    },
+    {   
+        "id": "10",
+        "name": "Gelo Pop",
+        "src": "assets/Clientes/GeloPop.svg"
+    },
+    {   
+        "id": "11",
+        "name": "Indigo",
+        "src": "assets/Clientes/Indigo.svg"
+    },
+    {   
+        "id": "12",
+        "name": "Lacador Gelo",
+        "src": "assets/Clientes/LacadorGelo.jpg"
+    },
+    {   
+        "id": "13",
+        "name": "Locall",
+        "src": "assets/Clientes/Locall.png"
+    },
+    {   
+        "id": "14",
+        "name": "Medfisio",
+        "src": "assets/Clientes/Medfisio.svg"
+    },
+    {   
+        "id": "15",
+        "name": "Moveis do Bem",
+        "src": "assets/Clientes/MoveisDoBem.png"
+    },
+    {   
+        "id": "16",
+        "name": "Otimiza RH",
+        "src": "assets/Clientes/OtimizaRH.png"
+    },
+    {   
+        "id": "17",
+        "name": "Prumo",
+        "src": "assets/Clientes/Prumo.jpg"
+    },
+    {   
+        "id": "18",
+        "name": "SafePark",
+        "src": "assets/Clientes/SafePark.png"
+    },
+    {   
+        "id": "19",
+        "name": "Salute",
+        "src": "assets/Clientes/Salute.png"
+    },
+    {   
+        "id": "20",
+        "name": "Sicredi",
+        "src": "assets/Clientes/Sicredi.png"
+    },
+    {   
+        "id": "21",
+        "name": "Simset",
+        "src": "assets/Clientes/Simset.png"
+    },
+    {   
+        "id": "22",
+        "name": "UrbanFarmacy",
+        "src": "assets/Clientes/UrbanFarmacy.png"
+    },
+    {   
+        "id": "23",
+        "name": "Voz e Dados",
+        "src": "assets/Clientes/VozDados.png"
+    }
+]

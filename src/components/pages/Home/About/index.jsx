@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import Title from "../../../Title"
 import Line from "../../../Line"
-import Paragraph from "../../../Paragraph"
+import Title from "../../../Title"
 
 const AboutContainer = styled.section`
     align-items: center;
@@ -17,16 +16,23 @@ const AboutCard = styled.div`
     gap: 2em;
     justify-content: center;
 `
+const Subtitle = styled.h3`
+    color: #000000;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+`
+const Paragraph = styled.p`
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+`
 const Description = styled.div`
     align-items: start;
     display: flex;
     flex-direction: column;
     justify-content: start;
-`
-const Subtitle = styled.h3`
-    color: #000000;
-    font-size: 1.75rem;
-    font-weight: 500;
 `
 const Image = styled.img`
     border-radius: 10px;
@@ -45,7 +51,7 @@ const About = () => {
                 <Description>
                     <Subtitle>Sobre a Arget Ar Condicionado</Subtitle>
                     <Line margin="0.5em 0 1.5em 0" marginSide="0" width="6em"/>
-                    <Paragraph size="1.1rem">
+                    <Paragraph>
                         A mais de 20 anos a Arget Ar Condicionado vem proporcinando o melhor da climatização, 
                         visando sempre suprir as necessidades de seus clientes com excelência e maestria em 
                         nossos serviços de Projetos, Instalação de Ar Condicionado e Manutenção de sistema 

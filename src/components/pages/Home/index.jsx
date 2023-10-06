@@ -5,6 +5,7 @@ import Slide from "./Slide"
 import styled from "styled-components";
 import {Dots, DotContainer} from "./Slide/Dots"
 import About from "./About"
+import ContactBar from "../../ContactBar"
 
 
 const SliderStyled = styled(Slider)`
@@ -53,8 +54,8 @@ const Home = () => {
                     img="/assets/Carrocel-3.png"
                 />
             </SliderStyled>
-
             <About/>
+            <ContactBar/>
         </>
     )
 }

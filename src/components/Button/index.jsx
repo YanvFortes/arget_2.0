@@ -3,6 +3,7 @@ import styled from "styled-components"
 const ButtonStyled = styled.button`
     align-items: center;
     background-color: ${props => props.$backgroundColor ? props.$backgroundColor : `#2d709e`};
+    box-shadow: ${props => props.shadow ? props.shadow : "none"};
     border: none;
     border-radius: 10px;
     color: #FFFFFF;
@@ -15,7 +16,7 @@ const ButtonStyled = styled.button`
     transition: .7s ease;
 
     &:hover {
-        background-color: ${props => props.$backgroundHover ? props.$backgroundHover : `#2d709e`};
+        background-color: ${props => props.$backgroundHover ? props.$backgroundHover : `none`};
         transform: scale(1.1);
     }
 `

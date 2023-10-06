@@ -5,15 +5,17 @@ const TitleStyled = styled.h2`
     font-size: ${props => props.$size};
     font-weight: ${props => props.$weight};
     text-align: ${props => props.$align ? props.$align : "center"};
+    text-shadow: ${props => props.$shadow ? props.$shadow : "none"};
 `
 
-const Title = ( {align, children, color, size, weight} ) => {
+const Title = ( {align, children, color, shadow, size, weight} ) => {
     return (
         <TitleStyled
             $color={color}
             $size={size}
             $weight={weight}
             $align={align}
+            $shadow={shadow}
         >
             {children}
         </TitleStyled>
