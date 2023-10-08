@@ -2,116 +2,116 @@
     {   
         "id": "1",
         "name": "UFRGS",
-        "src": "assets/Clientes/UFRGS.png"
+        "path": "assets/Clientes/UFRGS.png"
     },
     {   
         "id": "2",
         "name": "AJuris",
-        "src": "assets/Clientes/AJuris.png"
+        "path": "assets/Clientes/AJuris.png"
     },
     {   
         "id": "3",
         "name": "Alcapone",
-        "src": "assets/Clientes/Alcapone.png"
+        "path": "assets/Clientes/Alcapone.png"
     },
     {   
         "id": "4",
         "name": "Atlas Schindler",
-        "src": "assets/Clientes/Atlas.png"
+        "path": "assets/Clientes/Atlas.jpg"
     },
     {   
         "id": "5",
         "name": "Beleza.com",
-        "src": "assets/Clientes/BelezaCom.png"
+        "path": "assets/Clientes/BelezaCom.png"
     },
     {   
         "id": "6",
         "name": "Computech",
-        "src": "assets/Clientes/Computech.png"
+        "path": "assets/Clientes/Computech.png"
     },
     {   
         "id": "7",
         "name": "Cross Life",
-        "src": "assets/Clientes/CrossLife.png"
+        "path": "assets/Clientes/CrossLife.png"
     },
     {   
         "id": "8",
         "name": "DBH Marina",
-        "src": "assets/Clientes/DBHMarina.png"
+        "path": "assets/Clientes/DBHMarina.png"
     },
     {   
         "id": "9",
         "name": "Eco Ville",
-        "src": "assets/Clientes/EcoVille.png"
+        "path": "assets/Clientes/EcoVille.PNG"
     },
     {   
         "id": "10",
         "name": "Gelo Pop",
-        "src": "assets/Clientes/GeloPop.svg"
+        "path": "assets/Clientes/GeloPop.svg"
     },
     {   
         "id": "11",
         "name": "Indigo",
-        "src": "assets/Clientes/Indigo.svg"
+        "path": "assets/Clientes/Indigo.svg"
     },
     {   
         "id": "12",
         "name": "Lacador Gelo",
-        "src": "assets/Clientes/LacadorGelo.jpg"
+        "path": "assets/Clientes/LacadorGelo.jpg"
     },
     {   
         "id": "13",
         "name": "Locall",
-        "src": "assets/Clientes/Locall.png"
+        "path": "assets/Clientes/Locall.png"
     },
     {   
         "id": "14",
         "name": "Medfisio",
-        "src": "assets/Clientes/Medfisio.svg"
+        "path": "assets/Clientes/Medfisio.svg"
     },
     {   
         "id": "15",
         "name": "Moveis do Bem",
-        "src": "assets/Clientes/MoveisDoBem.png"
+        "path": "assets/Clientes/MoveisDoBem.png"
     },
     {   
         "id": "16",
         "name": "Otimiza RH",
-        "src": "assets/Clientes/OtimizaRH.png"
+        "path": "assets/Clientes/OtimizaRH.png"
     },
     {   
         "id": "17",
         "name": "Prumo",
-        "src": "assets/Clientes/Prumo.jpg"
+        "path": "assets/Clientes/Prumo.jpg"
     },
     {   
         "id": "18",
         "name": "SafePark",
-        "src": "assets/Clientes/SafePark.png"
+        "path": "assets/Clientes/SafePark.PNG"
     },
     {   
         "id": "19",
         "name": "Salute",
-        "src": "assets/Clientes/Salute.png"
+        "path": "assets/Clientes/Salute.PNG"
     },
     {   
         "id": "20",
         "name": "Sicredi",
-        "src": "assets/Clientes/Sicredi.png"
+        "path": "assets/Clientes/Sicredi.png"
     },
     {   
         "id": "21",
         "name": "Simset",
-        "src": "assets/Clientes/Simset.png"
+        "path": "assets/Clientes/Simset.png"
     },
     {   
         "id": "22",
         "name": "UrbanFarmacy",
-        "src": "assets/Clientes/UrbanFarmacy.png"
+        "path": "assets/Clientes/UrbanFarmacy.png"
     },
     {   
         "id": "23",
         "name": "Voz e Dados",
-        "src": "assets/Clientes/VozDados.png"
+        "path": "assets/Clientes/VozDados.png"
     }
 ]

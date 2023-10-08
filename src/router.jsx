@@ -5,6 +5,7 @@ import Home from "./components/pages/Home"
 import Servicos from "./components/pages/Services"
 import Contato from "./components/pages/Contact"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const AppRoute = () => {
     return (  
@@ -16,6 +17,7 @@ const AppRoute = () => {
                 <Route path="servicos" element={<Servicos/>}/>
                 <Route path="contato" element={<Contato/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
 
 )

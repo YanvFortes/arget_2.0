@@ -6,6 +6,10 @@ import styled from "styled-components";
 import {Dots, DotContainer} from "./Slide/Dots"
 import About from "./About"
 import ContactBar from "../../ContactBar"
+import Clients from "./Clients";
+
+import pictures from "../Home/Clients/clients.json"
+import React, { useState } from "react"
 
 
 const SliderStyled = styled(Slider)`
@@ -13,9 +17,11 @@ const SliderStyled = styled(Slider)`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-`
+    `
 
 const Home = () => {
+
+    const [client, setClient] = useState(pictures) 
     
     const settings = {
         autoplay: true,
@@ -56,6 +62,7 @@ const Home = () => {
             </SliderStyled>
             <About/>
             <ContactBar/>
+            <Clients photos={client}/>
         </>
     )
 }

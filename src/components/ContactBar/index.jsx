@@ -48,10 +48,12 @@ const ContactBar = () => {
             </Box>
             <Box>
                 <Button color="#d51e17">
-                    <MdEmail/> Solicite um orçamento agora
+                    <MdEmail/> 
+                    Solicite um orçamento agora
                 </Button>
                 <Button color="#00BB2D">
-                    <RiWhatsappFill/> Chamar no WhatsApp agora
+                    <RiWhatsappFill/> 
+                    Chamar no WhatsApp agora
                 </Button>
             </Box>
         </Container>
