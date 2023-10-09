@@ -1,6 +1,8 @@
+import Banner from "./Banner";
+
 const Servicos = () => {
     return (
-        <></>
+        <Banner/>
     )
 }
 
