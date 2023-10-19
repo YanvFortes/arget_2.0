@@ -5,6 +5,9 @@ const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: ${props => props.$direction ? props.$direction : 'row'};
+    gap: 3em;
+    padding: 0 12em;
     `
 
 const Box = styled.div`
@@ -26,12 +29,12 @@ const Text = styled.p`
 const Image = styled.img`
     border-radius: 16px;
     width: 640px;
-    text-shadow: 0 4px 8px #000000b2;;
+    box-shadow: 0 4px 8px #000000b2;;
 `
 
-const ServiceCard = ( {title, text, img} ) => {
+const ServiceCard = ( {title, text, img, direction} ) => {
     return (
-        <Container>
+        <Container $direction={direction}>
             <Box>
                 <Title>{title}</Title>
                 <Line width="10em"/>
