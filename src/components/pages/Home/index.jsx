@@ -7,6 +7,7 @@ import {Dots, DotContainer} from "./Slide/Dots"
 import About from "./About"
 import ContactBar from "../../ContactBar"
 import Clients from "./Clients";
+import ScrollToTop from "../../ScrollToTop"
 
 import pictures from "../Home/Clients/clients.json"
 import React, { useState } from "react"
@@ -42,7 +43,8 @@ const Home = () => {
       };
 
     return (
-        <>
+        <>  
+            <ScrollToTop/>
             <SliderStyled {...settings}>
                 <Slide
                     title="Manutenção preventiva de ar-condicionado"

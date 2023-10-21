@@ -133,8 +133,8 @@ const Form = () => {
                                 },
                                 pattern: {
                                     value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                                    message: 'Digite um endereço de e-mail válido'
-                                  }
+                                    message: 'Digite um endereço de e-mail válido!'
+                                }
                             })}
                             onBlur={() => {
                                 trigger("email");
