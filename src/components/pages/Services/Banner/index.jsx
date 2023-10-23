@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Title from "../../../Title"
+import Title from "@Title"
 
 const BannerStyled = styled.div`
     top: 80px;

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Link } from 'react-router-dom';
 import { BiSolidRightArrow } from "react-icons/bi"
 
-import Button from "../../../Button"
+import Button from "@Button"
 
 const Container = styled.div`
     align-items: center;

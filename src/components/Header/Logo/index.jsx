@@ -1,4 +1,4 @@
-import LogoLink from "./LogoLink"
+import LogoLink from "@LogoLink"
 
 const Logo = () => {
     return (

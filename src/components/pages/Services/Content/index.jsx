@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import ServiceCard from "../ServiceCard"
-import Line from "../../../Line"
-import ContactBar from "../../../ContactBar"
+import ServiceCard from "@ServiceCard"
+import Line from "@Line"
+import ContactBar from "@ContactBar"
 
 const Container = styled.div`
     display: flex;

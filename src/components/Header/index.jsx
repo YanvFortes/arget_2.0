@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-import Logo from "./Logo"
-import NavBar from "./NavBar"
+import Logo from "@Logo"
+import NavBar from "@NavBar"
 
 const HeaderStyled = styled.header`
     align-items: center;

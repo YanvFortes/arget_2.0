@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Line from "../../../Line"
-import Title from "../../../Title"
+import Line from "@Line"
+import Title from "@Title"
 
 const AboutContainer = styled.section`
     align-items: center;

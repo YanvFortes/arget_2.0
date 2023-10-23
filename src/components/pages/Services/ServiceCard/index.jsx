@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Line from "../../../Line"
+import Line from "@Line"
 
 const Container = styled.section`
     display: flex;

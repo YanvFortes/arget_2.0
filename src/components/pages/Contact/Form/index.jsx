@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import  { useForm } from "react-hook-form"
 
-import Title from "../../../Title"
+import Title from "@Title"
 
 const FormStyled = styled.form`
     padding: 1em;

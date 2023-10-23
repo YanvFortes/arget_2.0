@@ -1,16 +1,16 @@
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import Slide from "./Slide"
+import "slick-carousel/slick/slick.css";
+import React, { useState } from "react";
 import styled from "styled-components";
-import {Dots, DotContainer} from "./Slide/Dots"
-import About from "./About"
-import ContactBar from "../../ContactBar"
-import Clients from "./Clients";
-import ScrollToTop from "../../ScrollToTop"
+import Slider from "react-slick";
+import Slide from "@Slide"
+import About from "@About"
+import Clients from "@Clients";
+import ContactBar from "@ContactBar";
+import ScrollToTop from "@ScrollToTop";
+import {Dots, DotContainer} from "@Dots";
 
-import pictures from "../Home/Clients/clients.json"
-import React, { useState } from "react"
+import pictures from "../Home/Clients/clients.json";
 
 
 const SliderStyled = styled(Slider)`

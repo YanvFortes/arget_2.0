@@ -1,6 +1,6 @@
 import styled from "styled-components" 
 
-import NavLink from "./NavLink"
+import NavLink from "@NavLink"
 
 const Nav = styled.nav`
     display: flex;

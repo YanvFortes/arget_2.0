@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { BsTelephoneFill } from "react-icons/bs"
 import { RiWhatsappFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
-import ScrollToTop from "../../ScrollToTop"
 
-import Form from './Form';
-import Card from './Card';
+import ScrollToTop from "@ScrollToTop"
+import Form from '@Form';
+import Card from '@Card';
 
 const ContactStyled = styled.main`
     align-items: center;
