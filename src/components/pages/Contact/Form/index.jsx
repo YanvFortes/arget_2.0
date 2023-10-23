@@ -26,7 +26,7 @@ const Field = styled.div`
     display: flex;
     flex-direction: column;
     gap: .5em;
-    height: 80px;
+    height: 70px;
 `
 const Description = styled.p`
     color: #2d709e;

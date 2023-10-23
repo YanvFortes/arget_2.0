@@ -4,6 +4,7 @@ import { AiFillClockCircle } from "react-icons/ai"
 import { BsTelephoneFill } from "react-icons/bs"
 import { RiWhatsappFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
+import { Link } from "react-router-dom"
 
 const FooterStyled = styled.footer`
     background-color: #4b5c7e;
@@ -34,6 +35,20 @@ const Title = styled.h4`
     font-size: 1.1rem;
     font-weight: 700;
 `
+const Href = styled.a`
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    gap: .5em;
+    text-decoration: none;
+`
+const LinkStyled = styled(Link)`
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    gap: .5em;
+    text-decoration: none;
+`
 
 
 const Footer = () => {
@@ -44,18 +59,18 @@ const Footer = () => {
                     <Logo src="/assets/Arget.svg"/>
                     <Text>Todos os direitos reservados © Arget Ar Condicionado 2023</Text>
                     <Text>CNPJ: 04.559.631/0001-04</Text>
-                    <Text>Desenvolvido por Yan Fortes</Text>
+                    <Href target="_blank" href="https://www.linkedin.com/in/yan-fortes-546455170/">Desenvolvido por Yan Fortes</Href>
                 </Box>
                 <Box>
                     <Title>Contato:</Title>
-                    <Text>
+                    <LinkStyled to="../contato">
                         <MdEmail/> 
                         forrogerio8@gmail.com
-                    </Text>
-                    <Text>
+                    </LinkStyled>
+                    <Href target="_blank" href="https://wa.me//555199751652?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20de%20ar%20condicionado">
                         <RiWhatsappFill/>
                         (51) 99975-1652
-                    </Text>
+                    </Href>
                     <Text>
                         <BsTelephoneFill/>
                         (51) 3374-2297

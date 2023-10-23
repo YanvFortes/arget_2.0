@@ -1,5 +1,7 @@
 import styled from "styled-components"
+import { Link } from 'react-router-dom';
 import { BiSolidRightArrow } from "react-icons/bi"
+
 import Button from "../../../Button"
 
 const Container = styled.div`
@@ -42,20 +44,22 @@ const Text = styled.p`
     font-size: 1.25rem;
     text-shadow: 2px 2px #000000b2;
 `
+const LinkStyled = styled(Link)`
+    text-decoration: none;
+`
 
-const Slide = ( {title, text, img, } ) => {
+const Slide = ( {title, text, img, path} ) => {
     return(
         <Container>
             <BackgroundImage src={img}/>
             <Description>
                 <Title>{title}</Title>
                 <Text>{text}</Text>
-                <Button
-                    color="#2d709e"
-                    hover="#d51e17"
-                >
-                    Sabia Mais <BiSolidRightArrow/>
-                </Button>
+                <LinkStyled to={path}>
+                    <Button color="#2d709e" hover="#d51e17">
+                        Sabia Mais <BiSolidRightArrow/>
+                    </Button>
+                </LinkStyled>
             </Description>
         </Container>
     )

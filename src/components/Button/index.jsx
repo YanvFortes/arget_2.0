@@ -22,13 +22,16 @@ const ButtonStyled = styled.button`
 `
 
 const Button = ({children, color, hover}) => {
+
     return (
-        <ButtonStyled 
+
+        <ButtonStyled
             $backgroundColor={color}
             $backgroundHover={hover}
         >
             {children}
         </ButtonStyled>
+
     )
 }
 

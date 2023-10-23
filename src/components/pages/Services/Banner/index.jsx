@@ -4,7 +4,7 @@ import Title from "../../../Title"
 const BannerStyled = styled.div`
     top: 80px;
     align-items: center;
-    background: url('assets/Carrocel-1.jpg') no-repeat 50% 25%; 
+    background: url('assets/banner-servicos.png') no-repeat 75% 25%; 
     display: flex;
     justify-content: center;
     padding: 8em;
