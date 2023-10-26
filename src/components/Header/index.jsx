@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 import Logo from "@Logo"
 import NavBar from "@NavBar"
+import Sidebar from "@Sidebar"
 
 const HeaderStyled = styled.header`
     align-items: center;
@@ -21,6 +22,7 @@ const HeaderStyled = styled.header`
 const Header = () => {
     return(
         <HeaderStyled>
+            {/* <Sidebar/> */}
             <Logo/>
             <NavBar/>
         </HeaderStyled>

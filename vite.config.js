@@ -18,6 +18,7 @@ export default defineConfig({
             "@LogoLink": "/src/components/Header/Logo/LogoLink",
             "@NavBar": "/src/components/Header/NavBar",
             "@NavLink": "/src/components/Header/NavBar/NavLink",
+            "@Sidebar": "/src/components/Header/Sidebar",
             "@Button": "/src/components/Button",
             "@Title": "/src/components/Title",
             "@Line": "/src/components/Line",

@@ -8,6 +8,10 @@ const DotContainer = styled.div`
     justify-content: center;
     padding: 1em;
 
+    @media (max-width: 426px) {
+        display: none;
+    }
+
     ul{
         align-items: center;
         display: flex;

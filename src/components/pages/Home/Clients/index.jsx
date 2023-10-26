@@ -7,6 +7,12 @@ const Container = styled.section`
     flex-direction: column;
     gap: 2em;
     padding: 3em 11em;
+
+    @media (max-width: 426px) {
+        align-items: center;
+        padding: 1em 0;
+        gap: 0;
+    }
 `
 const Paragraph = styled.p`
     align-items: center;
@@ -27,6 +33,11 @@ const PicturesBox = styled.div`
 const Picture = styled.img`
     max-height: 170px;
     max-width: 170px;
+
+    @media (max-width: 425px) {
+        max-height: 120px;
+        max-width: 120px;
+    }
 `
 
 const Clients = ( {photos} ) => {

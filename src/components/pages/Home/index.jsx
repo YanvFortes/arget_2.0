@@ -4,14 +4,15 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import Slide from "@Slide"
+import Line from "@Line"
 import About from "@About"
+import Title from "@Title"
 import Clients from "@Clients";
 import ContactBar from "@ContactBar";
 import ScrollToTop from "@ScrollToTop";
 import {Dots, DotContainer} from "@Dots";
 
 import pictures from "../Home/Clients/clients.json";
-
 
 const SliderStyled = styled(Slider)`
     display: block;
@@ -65,6 +66,10 @@ const Home = () => {
                     path="contato"
                 />
             </SliderStyled>
+            <Title size="3rem" weight="700">
+                Especialista em Instalação e Manutenção de Ar Condicionado e Split
+            </Title>
+            <Line margin="-2em 0 1em 0" width="24em"/>
             <About/>
             <ContactBar/>
             <Clients photos={client}/>

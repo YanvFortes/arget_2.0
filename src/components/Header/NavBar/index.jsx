@@ -5,6 +5,10 @@ import NavLink from "@NavLink"
 const Nav = styled.nav`
     display: flex;
     gap: 2em;
+
+    @media (max-width: 426px) {
+        display: none;
+    }
 `
 
 const NavBar = () => {

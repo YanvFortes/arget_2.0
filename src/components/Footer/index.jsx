@@ -6,19 +6,34 @@ import { RiWhatsappFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
 import { Link } from "react-router-dom"
 
-const FooterStyled = styled.footer`
+const Container = styled.footer`
     background-color: #4b5c7e;
     padding: 1.5em 2em;
 `
-const Container = styled.div`
+const FooterDesktop = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 426px) {
+        display: none;
+    }
+`
+const FooterMobile = styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
 `
 const Box = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1em;
+
+    @media (max-width: 426px) {
+        font-size: 2rem;
+        flex-direction: row;
+    }
 `
 const Logo = styled.img`
     width: 180px;
@@ -53,8 +68,8 @@ const LinkStyled = styled(Link)`
 
 const Footer = () => {
     return(
-        <FooterStyled>
-            <Container>
+        <Container>
+            <FooterDesktop>
                 <Box>
                     <Logo src="/assets/Arget.svg"/>
                     <Text>Todos os direitos reservados © Arget Ar Condicionado 2023</Text>
@@ -88,8 +103,21 @@ const Footer = () => {
                         Seg. - Sab. das 9:00 às 20:00
                     </Text>
                 </Box>
-            </Container>
-        </FooterStyled>
+            </FooterDesktop>
+
+            <FooterMobile>
+                <Box>
+                    <LinkStyled to="../contato">
+                        <MdEmail/> 
+                    </LinkStyled>
+                    <Href target="_blank" href="https://wa.me//555199751652?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20de%20ar%20condicionado">
+                        <RiWhatsappFill/>
+                    </Href>
+                </Box>
+                <Text>Arget Ar Condicionado 2023 &copy;</Text>
+                <Href target="_blank" href="https://www.linkedin.com/in/yan-fortes-546455170/">Desenvolvido por Yan Fortes</Href>
+            </FooterMobile>
+        </Container>
     )
 }
 

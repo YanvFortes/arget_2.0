@@ -14,6 +14,11 @@ const Container = styled.div`
     transition: transform .5s;
     top: 80px;
     width: 100vw;
+
+    @media (max-width: 426px) {
+        height: 80vh;
+        top: 40px;
+    }
 `
 const BackgroundImage = styled.img`
     display: flex;
@@ -32,12 +37,20 @@ const Description = styled.div`
     position: absolute;
     text-align: center;
     width: 35vw;
+
+    @media (max-width: 426px) {
+        width: 75vw;
+    }
 `
-const Title = styled.h2`
+const Title = styled.h1`
     color: #FFFFFF;
     font-size: 2rem;
     text-shadow: 2px 2px #000000b2;
     text-transform: uppercase;
+    
+    @media (max-width: 426px) {
+        font-size: 1.5rem;
+    }
 `
 const Text = styled.p`
     color: #FFFFFF;

@@ -12,6 +12,12 @@ const Container = styled.section`
     display: flex;
     justify-content: space-between;
     padding: 2em 10em;
+
+    @media (max-width: 426px) {
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+    }
 `
 const Box = styled.div`
     display: flex;

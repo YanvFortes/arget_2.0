@@ -6,6 +6,14 @@ const TitleStyled = styled.h2`
     font-weight: ${props => props.$weight};
     text-align: ${props => props.$align ? props.$align : "center"};
     text-shadow: ${props => props.$shadow ? props.$shadow : "none"};
+
+    @media (max-width: 425px) {
+        box-sizing: border-box;
+        font-size: 1.75rem;
+        font-weight: 600;
+        width: 100vw;
+        padding: .5em;
+    }
 `
 
 const Title = ( {align, children, color, shadow, size, weight} ) => {
