@@ -16,10 +16,10 @@ import pictures from "../Home/Clients/clients.json";
 
 const SliderStyled = styled(Slider)`
     display: block;
-    padding: 0;
+    padding: 0 0 3em 0;
     margin: 0;
     box-sizing: border-box;
-    `
+`
 
 const Home = () => {
 
@@ -69,7 +69,7 @@ const Home = () => {
             <Title size="3rem" weight="700">
                 Especialista em Instalação e Manutenção de Ar Condicionado e Split
             </Title>
-            <Line margin="-2em 0 1em 0" width="24em"/>
+            <Line margin="1em 0 0 0" width="24em"/>
             <About/>
             <ContactBar/>
             <Clients photos={client}/>

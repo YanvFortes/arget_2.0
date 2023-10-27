@@ -11,6 +11,10 @@ const CardStyled = styled.div`
     gap: 0.5em;
     padding: 3em 0;
     width: 22vw;
+
+    @media (max-width: 426px) {
+        width: 80vw;
+    }
 `
 const Icon = styled.p`
     color: #d51e17;

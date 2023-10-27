@@ -1,4 +1,6 @@
+import React, { useState } from "react"
 import styled from "styled-components"
+import { HiMenu } from "react-icons/hi"
 
 import Logo from "@Logo"
 import NavBar from "@NavBar"
@@ -17,15 +19,55 @@ const HeaderStyled = styled.header`
     top: 0;
     width: 100vw;
     z-index: 999;
+
+    @media (max-width: 426px) {
+        box-sizing: border-box;
+        gap: 0;
+        justify-content: space-between;
+        padding: .5em;
+    }
+`
+const MenuBtn = styled.button`
+
+    display: none;
+
+    @media (max-width: 426px) {
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        color: #2d709e;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
 `
 
 const Header = () => {
+
+    const [sidebarOpen, setSidebarOpen] = useState(false)
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    }
+
+    const closeMenu = () => {
+        setSidebarOpen(false);
+      };
+
     return(
-        <HeaderStyled>
-            {/* <Sidebar/> */}
-            <Logo/>
-            <NavBar/>
-        </HeaderStyled>
+        <>
+            <HeaderStyled>
+                <Logo/>
+                <NavBar/>
+                <MenuBtn onClick={toggleSidebar}>
+                    <HiMenu/>
+                </MenuBtn>
+            </HeaderStyled>
+            <Sidebar 
+                isOpen={sidebarOpen}
+                close={closeMenu}
+            />
+        </>
     )
 }
 

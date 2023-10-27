@@ -9,6 +9,11 @@ const BannerStyled = styled.div`
     justify-content: center;
     padding: 8em;
     position: relative;
+
+    @media (max-width: 426px) {
+        background-size: cover;
+        padding: 6em;
+    }
 `
 
 const Banner = () => {

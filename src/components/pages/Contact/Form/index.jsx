@@ -5,6 +5,12 @@ import Title from "@Title"
 
 const FormStyled = styled.form`
     padding: 1em;
+
+    @media (max-width: 426px) {
+        box-sizing: border-box;
+        max-width: 100vw;
+        padding: 1em;
+    }
 `
 const Fieldset = styled.fieldset`
     background-color: #FFFFFF;
@@ -15,12 +21,21 @@ const Fieldset = styled.fieldset`
     gap: 1em;
     padding: 2em;
     max-width: 70vw;
+
+    @media (max-width: 426px) {
+        box-sizing: border-box;
+        max-width: 50vw
+    }
 `
 const Container = styled.div`
     display: flex;
     flex-direction: ${props => props.$direction ? props.$direction : 'column'};
     flex-wrap: wrap;
     justify-content: space-around;
+
+    @media (max-width: 426px) {
+        flex-direction: column;
+    }
 `
 const Field = styled.div`
     display: flex;
@@ -34,6 +49,11 @@ const Description = styled.p`
     line-height: 1.5rem;
     text-shadow: 1px 1px #0000004c;
     padding: 1em 0;
+
+    @media (max-width: 426px) {
+        box-sizing: border-box;
+        
+    }
 `
 const Input = styled.input`
     background-color: #e6e6e6;
@@ -41,6 +61,10 @@ const Input = styled.input`
     border-radius: 8px;
     padding: 0.75em;
     width: 33vw;
+
+    @media (max-width: 426px) {
+        width: 90%;
+    }
 `
 const Erro = styled.span`
     font-size: .9rem;
@@ -53,6 +77,11 @@ const TextArea = styled.textarea`
     height: 180px;
     padding: 0.5em;
     width: auto;
+
+    @media (max-width: 426px) {
+        height: 80px;
+        width: 60vw;
+    }
 `
 const Submit = styled.button`
     background-color: #2d709e;
@@ -69,6 +98,12 @@ const Submit = styled.button`
     &:hover{
         transform: scale(1.1);
     }
+
+    @media (max-width: 426px) {
+        width: 80%;
+    } 
+
+
 `
 
 const Form = () => {

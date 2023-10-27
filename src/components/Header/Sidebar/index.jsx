@@ -7,14 +7,18 @@ import { Link } from "react-router-dom"
 const Aside = styled.aside`
     background-color: #FFFFFF;
     box-shadow: 1px 5px 10px 1px #222222;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 50vh;
-    margin-top: 100px;
+    justify-content: space-between;
+    left: ${props => props.$isOpen ? "0" : "-70vw"};
+    margin-top: 80px;
     padding: 1em;
+    position: fixed;
     transition: .4s left;
     width: 70vw;
+    z-index: 999;
 `
 const Container = styled.div`
     display: flex;
@@ -38,19 +42,19 @@ const Copyright = styled.p`
     text-align: center;
 `
 
-const Sidebar = () => {
+const Sidebar = ( {isOpen, close} ) => {
     return(
-        <Aside>
+        <Aside $isOpen={isOpen}>
             <Container>
-                <LinkStyled to="/">
+                <LinkStyled to="/" onClick={close}>
                     <FaHome/> 
                     Home
                 </LinkStyled>
-                <LinkStyled to="/servicos">
+                <LinkStyled to="/servicos" onClick={close}>
                     <FaTools/> 
                     Serviços
                 </LinkStyled>
-                <LinkStyled to="/contato">
+                <LinkStyled to="/contato" onClick={close}>
                     <BsFillChatDotsFill/> 
                     Contato
                 </LinkStyled>

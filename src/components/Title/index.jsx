@@ -7,7 +7,7 @@ const TitleStyled = styled.h2`
     text-align: ${props => props.$align ? props.$align : "center"};
     text-shadow: ${props => props.$shadow ? props.$shadow : "none"};
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         box-sizing: border-box;
         font-size: 1.75rem;
         font-weight: 600;

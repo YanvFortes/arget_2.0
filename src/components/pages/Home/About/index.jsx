@@ -1,13 +1,12 @@
 import styled from "styled-components"
 import Line from "@Line"
-import Title from "@Title"
 
 const AboutContainer = styled.section`
     align-items: center;
     display: flex;
     gap: 2em;
     justify-content: center;
-    padding: 3em 10em;
+    padding: 6em 10em;
      
     @media (max-width: 426px) {
         box-sizing: border-box;

@@ -17,16 +17,17 @@ const DotContainer = styled.div`
         display: flex;
         gap: .25em;
         justify-content: center;
-        padding: 0 0 2.5em 0;
+        padding: 0 0 4.5em 0;
         
     }
 `
 const Dots = styled.div`
     background-color: #2d709e;
-    height: 20px;
-    width: 20px;
     border-radius: 64px;
+    height: 20px;
+    opacity: .8;
     transition: all .3s;
+    width: 20px;
 
     .slick-dots .slick-active & {
         background-color: #d51e17;

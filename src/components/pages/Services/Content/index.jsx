@@ -21,7 +21,7 @@ const Content = () => {
                 img="/assets/Servicos-1.jpg"
 
             />
-            <Line width="24em"/>
+            <Line width="24em" mobile="none"/>
             <ServiceCard
                 title="Manutenção de Ar Condicionado"
                 text="Somos especializados em manutenção de ar-condicionado, realizando tanto manutenções preventivas quanto corretivas em sistemas de ar-condicionado, garantindo o máximo desempenho e eficiência dos equipamentos."
@@ -34,7 +34,7 @@ const Content = () => {
                 text="Realizamos projetos de infraestrutura para instalação de ar condicionado. Desde a concepção até a execução, garantimos qualidade em todas as etapas. Criamos uma soluções personalizadas para seu projeto, proporcionando ambientes climatizados com eficiência e conforto garantidos."
                 img="/assets/Servicos-4.jpg"
             />
-            <Line width="24em"/>
+            <Line width="24em" mobile="none"/>
             <ServiceCard
                 title="Outros serviços"
                 text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate facere temporibus itaque, adipisci saepe odio nulla alias laudantium sunt est, cumque quam blanditiis dolor quasi minima! Minus molestias corrupti quae quisquam reiciendis!"

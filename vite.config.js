@@ -33,7 +33,7 @@ export default defineConfig({
             "@Services:": "/src/components/pages/Services",
             "@Banner": "/src/components/pages/Services/Banner",
             "@Content": "/src/components/pages/Services/Content",
-            "@ServiceCard": "/src/components/pages/Services/ServiceCard",
+            "@ServiceCard": "/src/components/pages/Services/Content/ServiceCard",
 
         }
     }

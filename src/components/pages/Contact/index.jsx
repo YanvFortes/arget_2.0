@@ -21,6 +21,11 @@ const Cards = styled.section`
     justify-content: center;
     gap: 4em;
     padding: 2em 12em;
+
+    @media (max-width: 426px) {
+        padding: 0em;
+        flex-direction: column;
+    }
 `
 
 const Contact = () => {

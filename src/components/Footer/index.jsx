@@ -20,10 +20,15 @@ const FooterDesktop = styled.div`
     }
 `
 const FooterMobile = styled.div`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: .75em;
+
+    display: none;
+
+    @media (max-width: 426px) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: .75em;
+    }
 `
 const Box = styled.div`
     display: flex;
@@ -31,8 +36,9 @@ const Box = styled.div`
     gap: 1em;
 
     @media (max-width: 426px) {
-        font-size: 2rem;
         flex-direction: row;
+        font-size: 2rem;
+        gap: 2.5em;
     }
 `
 const Logo = styled.img`
