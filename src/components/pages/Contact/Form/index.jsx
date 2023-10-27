@@ -7,9 +7,8 @@ const FormStyled = styled.form`
     padding: 1em;
 
     @media (max-width: 426px) {
-        box-sizing: border-box;
         max-width: 100vw;
-        padding: 1em;
+        padding: 0;
     }
 `
 const Fieldset = styled.fieldset`
@@ -23,8 +22,11 @@ const Fieldset = styled.fieldset`
     max-width: 70vw;
 
     @media (max-width: 426px) {
+        align-items: center;
         box-sizing: border-box;
-        max-width: 50vw
+        max-width: 100vw;
+        padding: 0;
+        border-radius: 0;
     }
 `
 const Container = styled.div`
@@ -34,6 +36,7 @@ const Container = styled.div`
     justify-content: space-around;
 
     @media (max-width: 426px) {
+        align-items: center;
         flex-direction: column;
     }
 `
@@ -42,6 +45,10 @@ const Field = styled.div`
     flex-direction: column;
     gap: .5em;
     height: 70px;
+
+    @media (max-width: 426px) {
+        width: 90vw;
+    }
 `
 const Description = styled.p`
     color: #2d709e;
@@ -51,7 +58,9 @@ const Description = styled.p`
     padding: 1em 0;
 
     @media (max-width: 426px) {
+        text-align: center;
         box-sizing: border-box;
+        font-size: 1rem;
         
     }
 `
@@ -69,6 +78,11 @@ const Input = styled.input`
 const Erro = styled.span`
     font-size: .9rem;
     color: #d51e17;
+
+    @media (max-width: 426px) {
+        font-size: .8rem;
+        text-align: center;
+    }
 `
 const TextArea = styled.textarea`
     background-color: #e6e6e6;
@@ -79,8 +93,8 @@ const TextArea = styled.textarea`
     width: auto;
 
     @media (max-width: 426px) {
-        height: 80px;
-        width: 60vw;
+        height: 120px;
+        width: 85vw;
     }
 `
 const Submit = styled.button`
@@ -101,6 +115,7 @@ const Submit = styled.button`
 
     @media (max-width: 426px) {
         width: 80%;
+        margin: 1em;
     } 
 
 

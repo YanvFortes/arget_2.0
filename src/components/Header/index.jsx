@@ -46,17 +46,13 @@ const Header = () => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
-    const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen);
-    }
-
-    const closeMenu = () => {
-        setSidebarOpen(false);
-      };
+    const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+    const closeMenu = () => setSidebarOpen(false);
+    const scroll = () => window.scrollTo(0, 0);
 
     return(
         <>
-            <HeaderStyled>
+            <HeaderStyled onBlur={closeMenu}>
                 <Logo/>
                 <NavBar/>
                 <MenuBtn onClick={toggleSidebar}>
@@ -65,7 +61,7 @@ const Header = () => {
             </HeaderStyled>
             <Sidebar 
                 isOpen={sidebarOpen}
-                close={closeMenu}
+                close={() => {closeMenu(); scroll();}}
             />
         </>
     )

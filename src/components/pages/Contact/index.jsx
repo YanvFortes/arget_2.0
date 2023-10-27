@@ -13,7 +13,12 @@ const ContactStyled = styled.main`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 80px;
+    padding: 5em 0 0 0;
+
+    @media (max-width: 426px) {
+        gap: 2em;
+        padding: 5em 0 2em 0;
+    }
 `
 const Cards = styled.section`
     align-items: center;
@@ -25,6 +30,7 @@ const Cards = styled.section`
     @media (max-width: 426px) {
         padding: 0em;
         flex-direction: column;
+        gap: 2em;
     }
 `
 
