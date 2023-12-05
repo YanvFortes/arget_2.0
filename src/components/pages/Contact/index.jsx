@@ -22,15 +22,28 @@ const ContactStyled = styled.main`
 `
 const Cards = styled.section`
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    gap: 4em;
-    padding: 2em 12em;
+    gap: 3.75em;
+    padding: 2em 10em;
+
+    @media (max-width: 1024px) {
+        padding: 2em;
+        gap: 2em;
+    }
+
+    @media (max-width: 768px) {
+        gap: 2em;
+        padding: 2em 0;
+    }
+
+    @media (max-width: 616px) {
+        flex-direction: column;
+    }
 
     @media (max-width: 426px) {
         padding: 0em;
-        flex-direction: column;
-        gap: 2em;
     }
 `
 

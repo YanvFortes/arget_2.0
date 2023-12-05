@@ -6,7 +6,7 @@ const Nav = styled.nav`
     display: flex;
     gap: 2em;
 
-    @media (max-width: 426px) {
+    @media (max-width: 768px) {
         display: none;
     }
 `

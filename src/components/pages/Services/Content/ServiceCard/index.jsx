@@ -9,8 +9,21 @@ const Container = styled.section`
     gap: 3em;
     padding: 0 12em;
 
-    @media (max-width: 426px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
+        padding: 0 8em;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 6em;
+    }
+
+    @media (max-width: 616px) {
+        padding: 0 4em;
+    }
+
+    @media (max-width: 426px) {
         padding: 0 2em;
         gap: 2em;
     }
@@ -28,6 +41,10 @@ const Title = styled.h3`
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 1.75rem;
+    }
 `
 const Text = styled.p`
     line-height: 1.25rem;
@@ -35,7 +52,21 @@ const Text = styled.p`
 const Image = styled.img`
     border-radius: 16px;
     width: 640px;
+    height: 320px;
     box-shadow: 0 4px 8px #000000b2;
+
+    @media (max-width: 1024px) {
+        height: auto;
+        width: 50vw;
+    }
+
+    @media (max-width: 768px) {
+        width: 60vw;
+    }
+
+    @media (max-width: 616px) {
+        width: 75vw;
+    }
 
     @media (max-width: 426px) {
         width: 90vw;

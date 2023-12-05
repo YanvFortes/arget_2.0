@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import  { useForm } from "react-hook-form"
 
-import Title from "@Title"
-
 const FormStyled = styled.form`
     padding: 1em;
 
@@ -21,6 +19,10 @@ const Fieldset = styled.fieldset`
     padding: 2em;
     max-width: 70vw;
 
+    @media (max-width: 1024px) {
+        max-width: 75vw;
+    }
+
     @media (max-width: 426px) {
         align-items: center;
         box-sizing: border-box;
@@ -35,20 +37,23 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
 
+    @media (max-width: 1024px) {
+        justify-content: center;
+        gap: .5em;
+        flex-direction: ${props => props.$direction ? props.$direction : 'column'};
+    }
+    
     @media (max-width: 426px) {
         align-items: center;
         flex-direction: column;
     }
 `
-const Field = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-    height: 70px;
-
-    @media (max-width: 426px) {
-        width: 90vw;
-    }
+const Title = styled.h1`
+    color: #2d709e;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 1.5px #0000004c;
 `
 const Description = styled.p`
     color: #2d709e;
@@ -64,12 +69,30 @@ const Description = styled.p`
         
     }
 `
+const Field = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    height: 70px;
+
+    @media (max-width: 426px) {
+        width: 90vw;
+    }
+`
 const Input = styled.input`
     background-color: #e6e6e6;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     padding: 0.75em;
     width: 33vw;
+
+    @media (max-width: 1024px) {
+        width: 34vw;
+    }
+
+    @media (max-width: 768px) {
+        width: 70vw;
+    }
 
     @media (max-width: 426px) {
         width: 90%;
@@ -79,7 +102,7 @@ const Erro = styled.span`
     font-size: .9rem;
     color: #d51e17;
 
-    @media (max-width: 426px) {
+    @media (max-width: 1024px) {
         font-size: .8rem;
         text-align: center;
     }
@@ -140,14 +163,7 @@ const Form = () => {
         <FormStyled onSubmit={handleSubmit(onSubmit)}>
             <Fieldset>
                 <Container>
-                    <Title
-                        color="#2d709e"
-                        size="2.5rem"
-                        weight="500"
-                        shadow="2px 1.5px #0000004c" 
-                    >
-                        Entre em contato conosco
-                    </Title>
+                    <Title> Entre em contato conosco </Title>
                     <Description>
                         Quer solicitar um orçamento ou tem alguma dúvida sobre nossos serviços, 
                         pode nos enviar uma mensagem pelo formulário abaixo, que responderemos em breve.

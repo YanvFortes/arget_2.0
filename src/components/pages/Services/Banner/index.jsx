@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import Title from "@Title"
 
-const BannerStyled = styled.div`
+const Background = styled.div`
     top: 80px;
     align-items: center;
     background: url('assets/banner-servicos.png') no-repeat 75% 25%; 
@@ -15,19 +14,23 @@ const BannerStyled = styled.div`
         padding: 6em;
     }
 `
+const Title = styled.h1`
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px #000000b2;
+
+    @media (max-width: 426px) {
+        font-size: 2.5rem;
+    }
+`
 
 const Banner = () => {
     return (
-        <BannerStyled>
-                <Title 
-                    align="center"
-                    size="3rem"
-                    color="#FFFFFF"
-                    shadow="2px 2px #000000b2"
-                >
-                    Serviços
-                </Title>
-        </BannerStyled>
+        <Background>
+                <Title> Serviços </Title>
+        </Background>
     )
 }
 

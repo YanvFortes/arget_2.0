@@ -17,10 +17,10 @@ const HeaderStyled = styled.header`
     left: 0;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 999;
 
-    @media (max-width: 426px) {
+    @media (max-width: 768px) {
         box-sizing: border-box;
         gap: 0;
         justify-content: space-between;
@@ -28,16 +28,19 @@ const HeaderStyled = styled.header`
     }
 `
 const MenuBtn = styled.button`
-
     display: none;
 
-    @media (max-width: 426px) {
+    @media (max-width: 768px) {
         align-items: center;
         border: none;
         background-color: transparent;
         color: #2d709e;
         display: flex;
         justify-content: center;
+        font-size: 3rem;
+    }
+
+    @media (max-width: 426px) {
         font-size: 2.5rem;
     }
 `
@@ -52,7 +55,7 @@ const Header = () => {
 
     return(
         <>
-            <HeaderStyled onBlur={closeMenu}>
+            <HeaderStyled>
                 <Logo/>
                 <NavBar/>
                 <MenuBtn onClick={toggleSidebar}>

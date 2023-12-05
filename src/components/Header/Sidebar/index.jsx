@@ -21,8 +21,12 @@ const Aside = styled.aside`
         padding: 1em;
         position: fixed;
         transition: .4s left;
-        width: 70vw;
+        width: 50vw;
         z-index: 999;
+    }
+
+    @media (max-width: 426px) {
+        width: 70vw;
     }
 `
 const Container = styled.div`
@@ -46,7 +50,6 @@ const Copyright = styled.p`
     font-weight: 600;
     text-align: center;
 `
-
 const DarkOverlay = styled.div`
     display: ${props => props.$isDark ? "block" : "none"};
     position: fixed;

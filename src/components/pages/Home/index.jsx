@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import Slide from "@Slide"
 import Line from "@Line"
 import About from "@About"
-import Title from "@Title"
 import Clients from "@Clients";
 import ContactBar from "@ContactBar";
 import ScrollToTop from "@ScrollToTop";
@@ -19,6 +18,34 @@ const SliderStyled = styled(Slider)`
     padding: 0 0 3em 0;
     margin: 0;
     box-sizing: border-box;
+
+    @media (max-width: 426px) {
+         padding: 1em 0;
+    }
+`
+const Title = styled.h2`
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center; 
+
+    @media (max-width: 1024px) {
+        font-size: 2.5rem;
+        padding: 0 2.5em;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 2.25rem;
+        padding: 0 1em;
+    }
+
+    @media (max-width: 616px) {
+        font-size: 2rem;
+    }
+    
+    @media (max-width: 426px) {
+        font-size: 1.75rem;
+        padding: 0 1em;
+    }
 `
 
 const Home = () => {
@@ -66,7 +93,7 @@ const Home = () => {
                     path="contato"
                 />
             </SliderStyled>
-            <Title size="3rem" weight="700">
+            <Title>
                 Especialista em Instalação e Manutenção de Ar Condicionado e Split
             </Title>
             <Line margin="1em 0 0 0" width="24em"/>

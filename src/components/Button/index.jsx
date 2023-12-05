@@ -11,6 +11,7 @@ const ButtonStyled = styled.button`
     display: flex;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: ${props => props.$weight ? props.$weight : "400"};
     gap: .5em;
     padding: .5em .75em;
     transition: .7s ease;
@@ -21,13 +22,14 @@ const ButtonStyled = styled.button`
     }
 `
 
-const Button = ({children, color, hover}) => {
+const Button = ({children, color, hover, weight}) => {
 
     return (
 
         <ButtonStyled
             $backgroundColor={color}
             $backgroundHover={hover}
+            $weight={weight}
         >
             {children}
         </ButtonStyled>
