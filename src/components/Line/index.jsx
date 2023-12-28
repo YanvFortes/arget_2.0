@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 const LineStyled = styled.div`
-    width: ${props => props.$width};
-    height: 0.25rem;
     background: #4b5c7e;
+    height: 0.25rem;
     margin: ${props => props.$margin ? props.$margin : "1em 0"};
     margin-left: ${props => props.$marginSide ? props.$marginSide : "auto"};
+    width: ${props => props.$width};
     margin-right: ${props => props.$marginSide ? props.$marginSide : "auto"}; 
 
     @media (max-width: 426px) {

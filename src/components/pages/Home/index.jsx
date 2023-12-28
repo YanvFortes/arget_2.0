@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import Slide from "@Slide"
-import Line from "@Line"
 import About from "@About"
 import Clients from "@Clients";
 import ContactBar from "@ContactBar";
@@ -43,10 +42,24 @@ const Title = styled.h2`
     }
     
     @media (max-width: 426px) {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         padding: 0 1em;
     }
 `
+const Line = styled.div`
+    background: #4b5c7e;
+    height: 0.25rem;
+    margin: 1em 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24em;
+
+    @media (max-width: 426px) {
+        height: 0.25rem;
+        margin: .5em auto 0 auto;
+        width: 10em;
+    }
+    `
 
 const Home = () => {
 
@@ -96,7 +109,7 @@ const Home = () => {
             <Title>
                 Especialista em Instalação e Manutenção de Ar Condicionado e Split
             </Title>
-            <Line margin="1em 0 0 0" width="24em"/>
+            <Line/>
             <About/>
             <ContactBar/>
             <Clients photos={client}/>

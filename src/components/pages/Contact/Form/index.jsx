@@ -27,6 +27,7 @@ const Fieldset = styled.fieldset`
         align-items: center;
         box-sizing: border-box;
         max-width: 100vw;
+        gap: 0;
         padding: 0;
         border-radius: 0;
     }
@@ -54,6 +55,11 @@ const Title = styled.h1`
     font-weight: 500;
     text-align: center;
     text-shadow: 2px 1.5px #0000004c;
+    
+    @media (max-width: 426px) {
+        font-size: 2rem;
+        padding: 1em 0 0 0;
+    }
 `
 const Description = styled.p`
     color: #2d709e;
@@ -61,12 +67,12 @@ const Description = styled.p`
     line-height: 1.5rem;
     text-shadow: 1px 1px #0000004c;
     padding: 1em 0;
-
+    
     @media (max-width: 426px) {
-        text-align: center;
         box-sizing: border-box;
         font-size: 1rem;
-        
+        text-align: center;
+        padding: 1em;
     }
 `
 const Field = styled.div`
@@ -102,7 +108,7 @@ const Erro = styled.span`
     font-size: .9rem;
     color: #d51e17;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
         font-size: .8rem;
         text-align: center;
     }
@@ -112,12 +118,17 @@ const TextArea = styled.textarea`
     border: 1px solid #0000004c;
     border-radius: 8px;
     height: 180px;
-    padding: 0.5em;
+    padding: .5em;
     width: auto;
+
+    @media (max-width: 1024px) {
+        margin: 0 .75em;
+    }
 
     @media (max-width: 426px) {
         height: 120px;
         width: 85vw;
+        margin-bottom: .5em;
     }
 `
 const Submit = styled.button`

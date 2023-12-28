@@ -82,7 +82,7 @@ const Sidebar = ( {isOpen, close} ) => {
                 </Container>
                 <Copyright>Arget Ar Condicionado &copy;</Copyright>
             </Aside>
-            <DarkOverlay $isDark={isOpen}/>
+            <DarkOverlay $isDark={isOpen} $closeDark={close}/>
         </>
     )
 }

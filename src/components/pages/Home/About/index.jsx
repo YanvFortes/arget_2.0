@@ -34,6 +34,7 @@ const Subtitle = styled.h3`
     }
     
     @media (max-width: 426px) {
+        font-size: 1.25rem;
         text-align: center;
     }
 `
@@ -57,6 +58,10 @@ const Description = styled.div`
     flex-direction: column;
     justify-content: start;
     gap: 1em;
+
+    @media (max-width: 426px) {
+        align-items: center;
+    }
 `
 const Image = styled.img`
     border-radius: 10px;
